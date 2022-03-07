@@ -1,0 +1,9 @@
+.card {
+  border: 1px solid black;
+  border-radius: 24px;
+  /* offset-x, offset-y, bur-radius, spread-radius */
+  box-shadow: 10px 10px 12px 4px rgba(0, 0, 0, 0.5) inset;
+  margin: 24px;
+  margin-bottom: 48px;
+  padding: 36px;
+}
