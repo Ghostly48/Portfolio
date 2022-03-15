@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 7</title>
+      <style>
+        body {
+          text-align: center;
+        }
+
+        #header {
+          background: red;
+          font-size: 45px;
+        }
+
+        #nav {
+          background: yellow;
+          display: block;
+        }
+
+        #title {
+          font-size: 40px;
+        }
+
+        #article {
+          background: lightgreen;
+          display: inline-block;
+          padding: 24px;
+          width: 52%;
+        }
+
+        #nestedSection {
+          background: lightblue;
+        }
+
+        #footer {
+          background: pink;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="header">
+        This is a header.
+      </div>
+      <div id="nav">
+        <div>
+          Home 
+          About
+          Contact
+        </div>
+      </div>
+      <div id="article">
+        <div id="title">
+          This is a title.
+        </div>
+          <div id="nestedSection">
+            This is my first section.
+            I will put content here.
+          </div>
+        <div id="title">
+            This is another title.
+          </div>
+          <div id="nestedSection">
+            This is my second section.
+            I will put more content here.
+          </div>
+        </div>
+      <div id="footer">
+        This is a footer.
+      </div>
+    </body>
+</html>
