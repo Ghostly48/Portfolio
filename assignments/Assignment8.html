@@ -12,13 +12,14 @@
           font-size: 45px;
         }
 
-        #nav {
+        #nav ul{
           background: yellow;
-          display: block;
+          list-style-type: none;
         }
 
-        #title {
-          font-size: 40px;
+        #nav ul li {
+          display: inline-block;
+          padding: 12px 24px;
         }
 
         #article {
@@ -38,36 +39,42 @@
       </style>
     </head>
     <body>
-      <div id="header">
+      <header id="header">
         This is a header.
-      </div>
-      <div id="nav">
-        <div>
-          <a href="assignments/Assignment7.html">
-            Home 
-            About
-            Contact
+      </header>
+      <nav id="nav">
+        <ul>
+          <a href="assignments/Assignment8.html"
+            <li>
+              Home
+            </li>
+            <li>
+              About
+            </li>
+            <li>
+              Contact
+            </li>
           </a>
-        </div>
-      </div>
-      <div id="article">
-        <div id="title">
+        </ul>
+      </nav>
+      <main id="article">
+        <h1>
           This is a title.
-        </div>
-          <div id="nestedSection">
+        </h1>
+          <section id="nestedSection">
             This is my first section.
             I will put content here.
-          </div>
-        <div id="title">
+          </section>
+        <h1>
             This is another title.
-          </div>
-          <div id="nestedSection">
+          </h1>
+          <section id="nestedSection">
             This is my second section.
             I will put more content here.
-          </div>
-        </div>
-      <div id="footer">
+          </section>
+        </main>
+      <footer id="footer">
         This is a footer.
-      </div>
+      </footer>
     </body>
 </html>
