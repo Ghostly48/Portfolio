@@ -7,37 +7,36 @@
         padding: 20px;
       }
       .block1 {
-        background-color: skyblue;
+        background-color: blue;
+        color: white;
         grid-area: header;
         text-align: center;
-        font-size: 24px;
+        font-size: 34px;
         padding: 34px;
       }
       .block2 {
         grid-area: pic1;
       }
       .block3 {
-        background-color: darkorange;
         grid-area: pic2;
       }
       .block4 {
-        background-color: yellow;
         grid-area: pic3;
       }
       .block5 {
-        background-color: lightgreen;
+        background-color: skyblue;
         grid-area: sidenav;
       }
       .block6 {
-        background-color: green;
         grid-area: content;
       }
       .block7 {
-        background-color: blue;
+        background-color: ;
         grid-area: pic4;
       }
       .block8 {
-        background-color: purple;
+        background-color: darkblue;
+        color: white;
         grid-area: footer;
       }
       .myGrid {
@@ -53,6 +52,10 @@
           "sidenav pic4 pic4"
           "footer footer footer"
       }
+      ul li {
+        list-style-type: none;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -63,13 +66,49 @@
       <img
         class="block block2"
         style="height: 140px"
-        src="../images/Dragon.jpg"/>
-      <div class="block block3">3</div>
-      <div class="block block4">4</div>
-      <div class="block block5">5</div>
-      <div class="block block6">6</div>
-      <div class="block block7">7</div>
-      <div class="block block8">8</div>
+        src="../images/Dragon.jpg"
+        />
+      <img
+        class="block block3"
+        style="height: 140px"
+        src="../images/Reaper.jpg"
+        />
+      <img
+        class="block block4"
+        style="height: 140px"
+        src="../images/FallenAngel.jpg"
+        />
+      <ul class="block block5">
+        <a href="assignments/Assignment13.html">
+          <li>Home</li>
+          <li>Gallery</li>
+          <li>About</li>
+          <li>Contact</li>
+        </a>
+      </ul>
+      <div class="block block6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Aenean sit amet lacinia enim. Nam imperdiet
+        tristique aliquam. Integer sollicitudin bibendum
+        libero, nec eleifend ante. Nulla maximus tortor in
+        feugiat maximus. Morbi sagittis iaculis libero vitae
+        luctus. Aliquam sed nisi libero. Donec vulputate enim
+        augue, vel tincidunt tellus vestibulum sit amet.
+        Nulla at felis nunc. Integer consequat sodales vehicula.
+        Ut maximus magna quis pharetra tristique. Proin quis
+        suscipit libero. Nulla accumsan risus id consequat
+        sollicitudin. Ut risus leo, vehicula et pharetra in,
+        lobortis a orci. Fusce nec orci auctor, malesuada ipsum
+        nec, facilisis arcu. Pellentesque sit amet magna porttitor
+        neque fringilla mattis.
+      </div>
+      <img
+        class="block block7"
+        src="../images/FlamingSkull.jpg"
+        />
+      <div class="block block8">
+        This is the footer. Copyright stuff goes here I guess.
+      </div>
     </div>
   </body>
 </html>
