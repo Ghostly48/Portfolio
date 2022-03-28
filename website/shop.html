@@ -2,43 +2,48 @@
 <html lang="en-US">
   <head>
     <title>Shop</title>
-  </head>
     <style>
-      ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 30px;
-      }
-      #portNavBar ul {
-        background-color: green;
-        list-style-type: none;
-        padding-inline-start:
-      }
-      #portNavBar ul li {
-        display: inline-block;
-        padding: 18px 90px
-      }
-      #cta {
-        float: right;
+      .myGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(60px, 200px);
+        grid-template-areas:
+          "h1 h1 h1 h1"
+          "nav nav nav nav"
       }
       h1 {
         font-family: "Apple Chancery";
-        font-size: 75px;
+        font-size: 85px;
         text-align: center;
-        margin-bottom: 0px;
-        margin-top: 30px;
         color: white;
+        grid-area: h1
       }
       body {
         background-color: black;
       }
+      ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      .portNavBar {
+        grid-area: nav;
+      }
+      .portNavBar ul {
+        background-color: green;
+        list-style-type: none;
+      }
+      .portNavBar ul li {
+        display: inline-block;
+        padding: 18px 130px
+      }
     </style>
   </head>
-  <body>
+  <body class="myGrid">
     <h1>
       Shop
     </h1>
-    <nav id="portNavBar">
+    <nav class="portNavBar">
       <ul>
         <li>
           <a href="index.html">
@@ -50,12 +55,12 @@
             Gallery
           </a>
         </li>
-        <li id="cta">
+        <li>
           <a href="shop.html">
             Shop
           </a>
         </li>
-        <li id="cta">
+        <li>
           <a href="about.html">
             About Me
           </a>
