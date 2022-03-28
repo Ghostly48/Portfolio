@@ -3,53 +3,58 @@
   <head>
     <title>Home Page</title>
     <style>
-      ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 30px;
-      }
-      #portNavBar ul {
-        background-color: green;
-        list-style-type: none;
-        padding-inline-start:
-      }
-      #portNavBar ul li {
-        display: inline-block;
-        padding: 18px 90px
-      }
-      #cta {
-        float: right;
+      .myGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(60px, 150px);
+        grid-template-areas:
+          "h1 h1 h1 h1"
+          "h2 h2 h2 h2"
+          "nav nav nav nav"
       }
       h1 {
-        font-family: Apple Chancery;
-        font-size: 75px;
+        font-family: "Apple Chancery";
+        font-size: 85px;
         text-align: center;
-        margin-bottom: 0px;
-        margin-top: 30px;
         color: white;
+        grid-area: h1
       }
       h2 {
-        font-family: Apple Chancery;
-        font-size: 55px;
+        font-family: "Apple Chancery";
+        font-size: 65px;
         text-align: center;
-        margin-top: 0px;
-        margin-bottom: 10px;
         color: white;
+        grid-area: h2
       }
       body {
         background-color: black;
       }
+      ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      .portNavBar {
+        grid-area: nav;
+      }
+      .portNavBar ul {
+        background-color: green;
+        list-style-type: none;
+      }
+      .portNavBar ul li {
+        display: inline-block;
+        padding: 18px 130px
+      }
     </style>
   </head>
-  <body>
-
+  <body class="myGrid">
     <h1>
       Haylee's
     </h1>
     <h2>
       Portfolio
     </h2>
-    <nav id="portNavBar">
+    <nav class="portNavBar">
       <ul>
         <li>
           <a href="index.html">
@@ -61,12 +66,12 @@
             Gallery
           </a>
         </li>
-        <li id="cta">
+        <li>
           <a href="website/shop.html">
             Shop
           </a>
         </li>
-        <li id="cta">
+        <li>
           <a href="website/about.html">
             About Me
           </a>
