@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 14</title>
+    <style>
+      #firstNameContainer label,
+      #middleInitialContainer label,
+      #lastNameContainer label {
+        display: block;
+        padding: 5px;
+      }
+
+      #submitButton {
+        margin-top: 24px;
+      }
+      #submitButton input[type=submit] {
+        background: linear-gradient(to bottom, white, lightgrey);
+        border: 1;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 6px 12px;
+      }
+      #submitButton input[type=submit]:active {
+        background: linear-gradient(to bottom, lightgrey, white);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h3>Enter your name below.</h3>
+      <div id="firstNameContainer">
+        <label for="firstNameInput">First Name</label>
+        <input type="text" id="firstNameInput" name="firstName">
+      </div>
+      <div id="middleInitialContainer">
+        <label for="middleInitialInput">Middle Initial</label>
+        <input type="text" id="middleInitialInput" name="middleInitial">
+      </div>
+      <div id="lastNameContainer">
+        <label for="lastNameInput">Last Name</label>
+        <input type="text" id="lastNameInput" name="lastName">
+      </div>
+
+      <h3>Pick your favorite primary color.</h3>
+      <div>
+        <input type="radio" id="redOption" name="color" value="red">
+        <label for="redOption">
+          Red
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="blueOption" name="color" value="blue">
+        <label for="blueOption">
+          Blue
+        </label>
+      </div>
+      <div>
+        <input type="radio" id="yellowOption" name="color" value="yellow">
+        <label for="yellowOption">
+          Yellow
+        </label>
+      </div>
+      <div id="submitButton">
+        <input type="submit" value="Submit">
+      </div>
+  </body>
+</html>
