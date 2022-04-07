@@ -1,11 +1,12 @@
 body {
   background-image: url('images/GraniteBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 h1 {
   font-family: 'montaga', serif;
-  font-size: 36px;
   color: darkblue;
 }
 header {
@@ -50,18 +51,68 @@ ul li a {
   background-position: center;
   height: 300px;
   grid-area: banner;
+  border: 12px solid #C0C0C0;
 }
 
 
 #cards {
   grid-area: cards;
+  display: flex;
+  flex-direction: row;
+}
+#cards img {
+  flex: 1;
+  border: 6px solid #C0C0C0;
 }
 
 
-main h4 {
+aside {
+  grid-area: sidenav;
+  padding-right: 12px;
+}
+#nextAppearance {
+  background-image: url("images/AppearancesBackground.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+#nextPublication h3,
+#nextAppearance h3 {
+  color: white;
+}
+#nextPublication {
+  background-image: url("images/PublicationsBackground.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.yellow {
+  color: yellow;
+}
+.white {
+  color: white;
+}
+main {
+  grid-area: blog;
+}
+main h4 a {
   color: darkblue;
+  text-decoration: none;
 }
 
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  margin-top: 24px;
+}
+
+
+#bottom {
+  background-image: url("images/BottomBackground.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  grid-area: bottom;
+  height: 120px;
+}
 #grid {
   display: grid;
   grid-template-columns: 1fr 333px 334px 333px 1fr;
@@ -89,5 +140,35 @@ main h4 {
         "sidenav"
         "footer"
         "bottom";
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+
+  #cards {
+    flex-direction: column;
+  }
+
+
+  #nextAppearance {
+    background-position: center bottom;
+  }
+  #nextPublication {
+    background-position: center bottom;
+  }
+  aside h3,
+  aside p {
+    text-align: center;
+  }
+  .yellow,
+  .white {
+    text-align: center;
+  }
+  aside img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
