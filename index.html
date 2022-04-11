@@ -3,7 +3,6 @@
   <head>
     <title>Home Page</title>
     <style>
-      @media screen and (min-width: 460px) {
         .myGrid {
           display: grid;
           grid-template-columns: auto;
@@ -41,32 +40,36 @@
           .portNavBar ul {
             background-color: green;
             list-style-type: none;
+            display: flex;
+            flex-direction: row;
           }
           .portNavBar ul li {
-            display: inline-block;
-            padding: 18px 130px
+            text-align: center;
+            flex: 1;
           }
-        }
+
+
+          
         @media screen and (max-width: 459px) {
           .myGrid {
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: minmax(20px, 100px);
             grid-template-areas:
-              "h1 h1 h1 h1"
-              "h2 h2 h2 h2"
-              "nav nav nav nav"
+              "h1"
+              "h2"
+              "nav"
             }
             h1 {
               font-family: "Apple Chancery";
-              font-size: 65px;
+              font-size: 75px;
               text-align: center;
               color: white;
               grid-area: h1
             }
             h2 {
               font-family: "Apple Chancery";
-              font-size: 45px;
+              font-size: 55px;
               text-align: center;
               color: white;
               grid-area: h2
@@ -85,10 +88,12 @@
             .portNavBar ul {
               background-color: green;
               list-style-type: none;
+              display: flex;
+              flex-direction: column;
             }
             .portNavBar ul li {
-              display: inline-block;
-              padding: 18px 30px
+              text-align: center;
+              flex: 1;
             }
           }
     </style>
