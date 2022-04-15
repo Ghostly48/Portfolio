@@ -28,15 +28,57 @@
       }
       .portNavBar {
         grid-area: nav;
+        background-color: green;
       }
       .portNavBar ul {
-        background-color: green;
         list-style-type: none;
       }
       .portNavBar ul li {
         display: inline-block;
         padding: 18px 130px
       }
+
+
+
+      @media screen and (max-width: 480px) {
+        .myGrid {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: minmax(20px, 100px);
+          grid-template-areas:
+            "h1"
+            "h2"
+            "nav"
+          }
+          h1 {
+            font-family: "Quintessential", cursive;
+            font-size: 75px;
+            text-align: center;
+            color: white;
+            grid-area: h1
+          }
+          body {
+            background-color: black;
+          }
+          ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+          }
+          .portNavBar {
+            grid-area: nav;
+          }
+          .portNavBar ul {
+            background-color: green;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+          }
+          .portNavBar ul li {
+            text-align: center;
+            flex: 1;
+          }
+        }
     </style>
   </head>
   <body class="myGrid">

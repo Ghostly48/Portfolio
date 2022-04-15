@@ -3,25 +3,73 @@
   <head>
     <title>Home Page</title>
     <style>
+      .myGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(60px, 150px);
+        grid-template-areas:
+          "h1 h1 h1 h1"
+          "h2 h2 h2 h2"
+          "nav nav nav nav"
+        }
+        h1 {
+          font-family: "Quintessential", cursive;
+          font-size: 85px;
+          text-align: center;
+          color: white;
+          grid-area: h1
+        }
+        h2 {
+          font-family: "Quintessential", cursive;
+          font-size: 65px;
+          text-align: center;
+          color: white;
+          grid-area: h2
+        }
+        body {
+          background-color: black;
+        }
+        ul li a {
+          color: white;
+          text-decoration: none;
+          font-size: 25px;
+        }
+        .portNavBar {
+          grid-area: nav;
+          background-color: green;
+        }
+        .portNavBar ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+        }
+        .portNavBar ul li {
+          text-align: center;
+          flex: 1;
+        }
+
+
+
+      @media screen and (max-width: 480px) {
         .myGrid {
           display: grid;
           grid-template-columns: auto;
-          grid-template-rows: minmax(60px, 150px);
+          grid-template-rows: minmax(20px, 100px);
           grid-template-areas:
-            "h1 h1 h1 h1"
-            "h2 h2 h2 h2"
-            "nav nav nav nav"
+            "h1"
+            "h2"
+            "nav"
           }
           h1 {
             font-family: "Quintessential", cursive;
-            font-size: 85px;
+            font-size: 75px;
             text-align: center;
             color: white;
             grid-area: h1
           }
           h2 {
             font-family: "Quintessential", cursive;
-            font-size: 65px;
+            font-size: 55px;
             text-align: center;
             color: white;
             grid-area: h2
@@ -41,61 +89,13 @@
             background-color: green;
             list-style-type: none;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
           }
           .portNavBar ul li {
             text-align: center;
             flex: 1;
           }
-
-
-
-        @media screen and (max-width: 459px) {
-          .myGrid {
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: minmax(20px, 100px);
-            grid-template-areas:
-              "h1"
-              "h2"
-              "nav"
-            }
-            h1 {
-              font-family: "Apple Chancery";
-              font-size: 75px;
-              text-align: center;
-              color: white;
-              grid-area: h1
-            }
-            h2 {
-              font-family: "Apple Chancery";
-              font-size: 55px;
-              text-align: center;
-              color: white;
-              grid-area: h2
-            }
-            body {
-              background-color: black;
-            }
-            ul li a {
-              color: white;
-              text-decoration: none;
-              font-size: 25px;
-            }
-            .portNavBar {
-              grid-area: nav;
-            }
-            .portNavBar ul {
-              background-color: green;
-              list-style-type: none;
-              display: flex;
-              flex-direction: column;
-            }
-            .portNavBar ul li {
-              text-align: center;
-              flex: 1;
-            }
-          }
+        }
     </style>
   </head>
   <body class="myGrid">
