@@ -10,7 +10,8 @@
         grid-template-areas:
           "h1 h1 h1"
           "nav nav nav"
-          "pic . content"
+          "pic content content"
+          "footer footer footer"
       }
       h1 {
         font-family: "Quintessential", cursive;
@@ -54,12 +55,26 @@
         margin-left: 30px;
         margin-right: 30px;
       }
-      p {
+      #bio {
         color: white;
         grid-area: content;
-        margin-left: 60px;
-        margin-right: 60px;
-        justify-content: center;
+        margin: auto;
+        width: 40%;
+        font-size: 20px;
+      }
+      #contactInfo {
+        color: white;
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+      }
+      #contactInfo ul{
+        list-style-type: none;
+      }
+      #contactInfo ul li {
+        flex: 1;
+        text-align: center;
+        font-size: 20px;
       }
 
 
@@ -131,12 +146,19 @@
     </nav>
     <div id="aboutInfo">
       <img src="../images/HayleeBarber.jpg" />
-      <p>I am a student at F.I.R.S.T. Institute working towards
+      <p id="bio">I am a student at F.I.R.S.T. Institute working towards
         becoming a professional graphic designer. I will be graduating
         with my Graphic Design and Web Development diploma in July of
         2022. From there I plan to start my career in the graphic design
         industry. Please feel free to look through my portfolio and reach
-        out to me through my email with any questions. </p>
+        out to me through my email with any questions.
+      </p>
     </div>
+    <footer id="contactInfo">
+      <ul>
+        <li>hayleejbarber@outlook.com</li>
+        <li>(919) 798-4432</li>
+      </ul>
+    </footer>
   </body>
 </html>
