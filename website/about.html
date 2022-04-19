@@ -19,10 +19,11 @@
         font-size: 85px;
         text-align: center;
         color: white;
-        grid-area: h1
+        grid-area: h1;
       }
       body {
         background-color: black;
+        margin: 0px;
       }
       ul li a {
         color: white;
@@ -104,34 +105,40 @@
           grid-template-rows: minmax(20px, 100px);
           grid-template-areas:
             "h1"
-            "h2"
             "nav"
+            "pic"
+            "content"
+            "bar"
+            "footer"
           }
           h1 {
-            font-family: "Quintessential", cursive;
             font-size: 75px;
-            text-align: center;
-            color: white;
-            grid-area: h1
-          }
-          body {
-            background-color: black;
-          }
-          ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 25px;
           }
           .portNavBar {
-            grid-area: nav;
+            margin-top: 100px;
           }
           .portNavBar ul {
-            display: flex;
+            flex-direction: column;
+            padding: 0px;
+          }
+          #aboutInfo {
             flex-direction: column;
           }
-          .portNavBar ul li {
+          div img {
+            margin-left: 60px;
+            margin-right: 60px;
+          }
+          #bio {
+            width: 70%;
             text-align: center;
-            flex: 1;
+            padding-top: 45px;
+          }
+          #contactInfo ul{
+            flex-direction: column;
+            padding: 0px;
+          }
+          #linkedInLink {
+            padding-top: 20px;
           }
         }
     </style>
@@ -174,12 +181,12 @@
     <footer id="contactInfo">
       <ul>
         <li class="contacts">hayleejbarber@outlook.com</li>
-        <li>
+        <li class="contacts">(919) 798-4432</li>
+        <li id="linkedInLink">
           <a href="https://www.linkedin.com/in/haylee-barber-7b9475222?trk=people-guest_people_search-card">
             <img src="../images/LinkedInLogo.jpg" />
           </a>
         </li>
-        <li class="contacts">(919) 798-4432</li>
       </ul>
     </footer>
   </body>
