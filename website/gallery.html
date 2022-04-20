@@ -10,6 +10,7 @@
         grid-template-areas:
           "h1 h1 h1 h1"
           "nav nav nav nav"
+          "pic pic pic pic"
       }
       h1 {
         font-family: "Quintessential", cursive;
@@ -41,30 +42,28 @@
         flex: 1;
       }
       #galleryWhole {
+        grid-area: pic;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
         margin-top: 40px;
       }
       .gallery {
         margin: 5px;
-        border: 1px solid green;
-        width: 180px;
-        flex: auto;
       }
 
-      .gallery:hover {
-        border: 1px solid darkgreen;
+      .gallery img:hover {
+        border: 10px solid lightgreen;
       }
 
       .gallery img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 300px;
+        flex: auto;
+        border: 10px solid green;
       }
       .description {
-        padding: 15px;
+        padding-bottom: 5px;
         text-align: center;
         color: white;
       }
@@ -109,7 +108,7 @@
     </nav>
     <div id=galleryWhole>
       <div class="gallery">
-        <img src="images/BellusMagazineCover.jpg" width="600" height="400">
+        <img src="images/BellusMagazineCover.jpg">
         <div class="description">Bellus Magazine Cover</div>
       </div>
 
@@ -119,44 +118,93 @@
       </div>
 
       <div class="gallery">
-        <a href="img_lights.jpg">
-          <img src="img_lights.jpg" width="600" height="400">
-        </a>
-        <div class="description">Add a description of the image here</div>
+          <img src="images/BellusMagazinePage2.jpg" width="600" height="400">
+        <div class="description">Bellus Magazine Page 2</div>
       </div>
 
       <div class="gallery">
-        <a href="img_mountains.jpg">
-          <img src="img_mountains.jpg" width="600" height="400">
-        </a>
-        <div class="description">Add a description of the image here</div>
-      </div>
-      <div class="gallery">
-        <a href="img_5terre.jpg">
-          <img src="img_5terre.jpg" width="600" height="400">
-        </a>
-        <div class="description">Add a description of the image here</div>
+          <img src="images/BellusMagazinePage3.jpg" width="600" height="400">
+        <div class="description">Bellus Magazine Page 3</div>
       </div>
 
       <div class="gallery">
-        <a href="img_forest.jpg">
-          <img src="img_forest.jpg" width="600" height="400">
-        </a>
-        <div class="description">Add a description of the image here</div>
+          <img src="images/ChildAbuseCollage.jpg" width="600" height="400">
+        <div class="description">Child Abuse Collage</div>
       </div>
 
       <div class="gallery">
-        <a href="img_lights.jpg">
-          <img src="img_lights.jpg" width="600" height="400">
-        </a>
-        <div class="description">Add a description of the image here</div>
+          <img src="images/DADAShirt.jpg" width="600" height="400">
+        <div class="description">DADA Style Shirt</div>
       </div>
 
       <div class="gallery">
-        <a href="img_mountains.jpg">
-          <img src="img_mountains.jpg" width="600" height="400">
-        </a>
-        <div class="description">Add a description of the image here</div>
+          <img src="images/FamilyTextWrap.png" width="600" height="400">
+        <div class="description">Family Text Wrap</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/FirebirdBusinessCard.png" width="600" height="400">
+        <div class="description">Firebird Business Card</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/FirebirdLogo.png" width="600" height="400">
+        <div class="description">Firebird Logo</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/FIRSTBrochureFront.jpg" width="600" height="400">
+        <div class="description">F.I.R.S.T. Institute Brochure Front</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/FIRSTBrochureBack.jpg" width="600" height="400">
+        <div class="description">F.I.R.S.T. Institute Brochure Back</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/FoodieMagazineCover.png" width="600" height="400">
+        <div class="description">Foodie Magazine Cover</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/FoodieMagazinePages.png" width="600" height="400">
+        <div class="description">Foodie Magazine Pages</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/FreshProducePoster.jpg" width="600" height="400">
+        <div class="description">Fresh Produce Poster</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/FruitfulBottleBranding.jpg" width="600" height="400">
+        <div class="description">Fruitful Bottle Branding</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/HomeMagazineCover.jpg" width="600" height="400">
+        <div class="description">Home Magazine Cover</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/HomeMagazinePages1.png" width="600" height="400">
+        <div class="description">Home Magazine Pages 1</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/HomeMagazinePages2.jpg" width="600" height="400">
+        <div class="description">Home Magazine Pages 2</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/IcyDress.jpg" width="600" height="400">
+        <div class="description">Icy Dress</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/InspirationalQuote.png" width="600" height="400">
+        <div class="description">Inspirational Quote</div>
       </div>
     </div>
   </body>
