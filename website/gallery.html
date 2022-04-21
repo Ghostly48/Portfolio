@@ -71,7 +71,17 @@
 
 
 
-
+      @media screen and (max-width: 480px) {
+        .myGrid {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: minmax(20px, 100px);
+          grid-template-areas:
+            "h1"
+            "nav"
+            "pic"
+          }
+        }
     </style>
   </head>
   <body class="myGrid">
