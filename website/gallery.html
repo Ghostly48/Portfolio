@@ -41,12 +41,13 @@
         text-align: center;
         flex: 1;
       }
-      #galleryWhole {
+      .galleryWhole {
         grid-area: pic;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 40px;
+        justify-content: center;
       }
       .gallery {
         margin: 5px;
@@ -70,17 +71,7 @@
 
 
 
-      @media screen and (max-width: 480px) {
-        .myGrid {
-          display: grid;
-          grid-template-columns: auto;
-          grid-template-rows: minmax(20px, 100px);
-          grid-template-areas:
-            "h1"
-            "h2"
-            "nav"
-          }
-        }
+
     </style>
   </head>
   <body class="myGrid">
@@ -106,7 +97,7 @@
         </li>
       </ul>
     </nav>
-    <div id=galleryWhole>
+    <div class="galleryWhole">
       <div class="gallery">
         <img src="images/BellusMagazineCover.jpg">
         <div class="description">Bellus Magazine Cover</div>
@@ -205,6 +196,36 @@
       <div class="gallery">
           <img src="images/InspirationalQuote.png" width="600" height="400">
         <div class="description">Inspirational Quote</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/MiniWorld.jpg" width="600" height="400">
+        <div class="description">Mini World</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/SweeneyToddMoviePoster1.png" width="600" height="400">
+        <div class="description">Sweeney Todd Movie Poster 1</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/SweeneyToddMoviePoster2.jpg" width="600" height="400">
+        <div class="description">Sweeney Todd Movie Poster 2</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/WishtreeBookCover1.jpg" width="600" height="400">
+        <div class="description">The Wishtree Book Cover 1</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/WishtreeBookCover2.png" width="600" height="400">
+        <div class="description">The Wishtree Book Cover 2</div>
+      </div>
+
+      <div class="gallery">
+          <img src="images/WonderlandMoviePosters.jpg" width="600" height="400">
+        <div class="description">Alice In Wonderland Movie Posters</div>
       </div>
     </div>
   </body>
