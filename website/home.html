@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Home Page</title>
+    <style>
+      .myGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: minmax(60px, 150px);
+        grid-template-areas:
+          "h1 h1 h1 h1"
+          "h2 h2 h2 h2"
+          "nav nav nav nav"
+        }
+        h1 {
+          font-family: "Quintessential", cursive;
+          font-size: 85px;
+          text-align: center;
+          color: white;
+          grid-area: h1;
+        }
+        h2 {
+          font-family: "Quintessential", cursive;
+          font-size: 65px;
+          text-align: center;
+          color: white;
+          grid-area: h2;
+        }
+        body {
+          background-color: black;
+          margin: 0px;
+        }
+        ul li a {
+          color: white;
+          text-decoration: none;
+          font-size: 25px;
+        }
+        .portNavBar {
+          grid-area: nav;
+          background-color: green;
+        }
+        .portNavBar ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+          padding-inline-start: 0px;
+        }
+        .portNavBar ul li {
+          text-align: center;
+          flex: 1;
+        }
+        div h1 {
+          font-size: 55px;
+        }
+
+
+
+      @media screen and (max-width: 480px) {
+        .myGrid {
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: minmax(20px, 100px);
+          grid-template-areas:
+            "h1"
+            "h2"
+            "nav"
+          }
+          h1 {
+            font-family: "Quintessential", cursive;
+            font-size: 75px;
+            text-align: center;
+            color: white;
+            grid-area: h1;
+          }
+          h2 {
+            font-family: "Quintessential", cursive;
+            font-size: 55px;
+            text-align: center;
+            color: white;
+            grid-area: h2;
+          }
+          .portNavBar {
+            grid-area: nav;
+          }
+          .portNavBar ul {
+            flex-direction: column;
+            text-align: center;
+            padding: 0px;
+          }
+          div h1 {
+            font-size: 45px;
+          }
+          #countdownWhole {
+            align-items: center;
+            justify-content: center;
+          }
+        }
+    </style>
+  </head>
+  <body class="myGrid">
+    <h1>
+      Haylee's
+    </h1>
+    <h2>
+      Portfolio
+    </h2>
+    <nav class="portNavBar">
+      <ul>
+        <li>
+          <a href="Home.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="website/gallery.html">
+            Gallery
+          </a>
+        </li>
+        <li>
+          <a href="website/about.html">
+            About Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="countdownWhole">
+      <h1>Accepting Work In:</h1>
+      <h1 id="countdown">LOADING...</h1>
+    </div>
+    <script type="text/javascript">
+      let deadline = new Date('July 22, 2022 16:30:00');
+
+      function setCountdown() {
+        let now = new Date();
+
+        let timeLeft = deadline.getTime() - now.getTime();
+
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 *24));
+        let hours = Math.floor(
+          (timeLeft %  (1000 * 60 * 60 * 24)) / (1000 * 60 *60)
+        );
+        var minutes =Math.floor(
+          (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        var seconds = Math.floor(
+          (timeLeft % (1000 * 60)) / 1000
+        );
+
+        document.getElementById('countdown').innerHTML =
+          days + 'days ' + hours + 'hours ' + minutes + 'minutes '
+           + seconds + 'seconds ';
+      }
+
+      setInterval(setCountdown, 1000);
+    </script>
+  </body>
+</html>
